@@ -2,8 +2,6 @@
 
 The tidy data set contains the following Time and FFT features.
 
-For each measurement the mean, stddev, and mean frequency were calculated.
-
 1	Subject  
 2	Activity  
 3	Time.BodyAcc.Mean.X  
