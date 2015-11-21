@@ -3,13 +3,20 @@ Getting and Cleaning Data Course Project
 
 ### Introduction
 
-run_analysis.R does the following:
+The run_analysis.R script will perform the following steps:
 
-1.	Merges the training and the test sets to create one data set.
-2.	Extracts only the measurements on the mean and standard deviation for each measurement. 
-3.	Uses descriptive activity names to name the activities in the data set.
-4.	Appropriately labels the data set with descriptive variable names.
-5.	From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject called 
+* Requires reshape2 library (for the melt() function)
+* Assumes that the data set archive was already downloaded and unzipped
+* Reads feature names and only keeps the mean and standard deviation columns
+* Reads training & test files
+* Appends the training and test data set rows
+* Reads the activity labels
+* Creates the label names Subject and Activity and the filtered features labels
+* Appropriately labels the data set with descriptive variable names
+* Uses descriptive activity names to name the activities in the data set
+* Melts the data set
+* Creates a second, independent, tidy data set which contains the average of each variable for each activity and subject
+* Saves the resulting tidy data set to file
 
 ### Execution
 
@@ -17,7 +24,7 @@ Execute this program as follows:
 
 1. Set your working directory to the directory that contains the raw data sets (subfolder UCI HAR Dataset).
 2. Package 'reshape2' must be installed. 
-3. Run 'run_analysis'.
+3. Run 'run_analysis.R'.
 
 
 
