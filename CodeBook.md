@@ -1,89 +1,88 @@
 ### Contained features
 
 The tidy data set contains the following Time and FFT features.
-The original features are renamed as follows:
 
-Original feature name                  |Renamed feature name  
----------------------------------------|---------------------------------------------------  
-1	Subject                        |1	Subject  
-2	Activity                       |2	Activity  
-3	tBodyAcc-mean()-X              |3	Time.BodyAcc.Mean.X  
-4	tBodyAcc-mean()-Y              |4	Time.BodyAcc.Mean.Y  
-5	tBodyAcc-mean()-Z              |5	Time.BodyAcc.Mean.Z  
-6	tBodyAcc-std()-X               |6	Time.BodyAcc.StdDev.X  
-7	tBodyAcc-std()-Y               |7	Time.BodyAcc.StdDev.Y  
-8	tBodyAcc-std()-Z               |8	Time.BodyAcc.StdDev.Z  
-9	tGravityAcc-mean()-X           |9	Time.GravityAcc.Mean.X  
-10	tGravityAcc-mean()-Y           |10	Time.GravityAcc.Mean.Y  
-11	tGravityAcc-mean()-Z           |11	Time.GravityAcc.Mean.Z    
-12	tGravityAcc-std()-X            |12	Time.GravityAcc.StdDev.X  
-13	tGravityAcc-std()-Y            |13	Time.GravityAcc.StdDev.Y  
-14	tGravityAcc-std()-Z            |14	Time.GravityAcc.StdDev.Z  
-15	tBodyAccJerk-mean()-X          |15	Time.BodyAccJerk.Mean.X  
-16	tBodyAccJerk-mean()-Y          |16	Time.BodyAccJerk.Mean.Y  
-17	tBodyAccJerk-mean()-Z          |17	Time.BodyAccJerk.Mean.Z  
-18	tBodyAccJerk-std()-X           |18	Time.BodyAccJerk.StdDev.X  
-19	tBodyAccJerk-std()-Y           |19	Time.BodyAccJerk.StdDev.Y  
-20	tBodyAccJerk-std()-Z           |20	Time.BodyAccJerk.StdDev.Z  
-21	tBodyGyro-mean()-X             |21	Time.BodyGyro.Mean.X  
-22	tBodyGyro-mean()-Y             |22	Time.BodyGyro.Mean.Y  
-23	tBodyGyro-mean()-Z             |23	Time.BodyGyro.Mean.Z  
-24	tBodyGyro-std()-X              |24	Time.BodyGyro.StdDev.X  
-25	tBodyGyro-std()-Y              |25	Time.BodyGyro.StdDev.Y  
-26	tBodyGyro-std()-Z              |26	Time.BodyGyro.StdDev.Z  
-27	tBodyGyroJerk-mean()-X         |27	Time.BodyGyroJerk.Mean.X  
-28	tBodyGyroJerk-mean()-Y         |28	Time.BodyGyroJerk.Mean.Y  
-29	tBodyGyroJerk-mean()-Z         |29	Time.BodyGyroJerk.Mean.Z  
-30	tBodyGyroJerk-std()-X          |30	Time.BodyGyroJerk.StdDev.X  
-31	tBodyGyroJerk-std()-Y          |31	Time.BodyGyroJerk.StdDev.Y  
-32	tBodyGyroJerk-std()-Z          |32	Time.BodyGyroJerk.StdDev.Z  
-33	tBodyAccMag-mean()             |33	Time.BodyAccMag.Mean  
-34	tBodyAccMag-std()              |34	Time.BodyAccMag.StdDev  
-35	tGravityAccMag-mean()          |35	Time.GravityAccMag.Mean  
-36	tGravityAccMag-std()           |36	Time.GravityAccMag.StdDev  
-37	tBodyAccJerkMag-mean()         |37	Time.BodyAccJerkMag.Mean  
-38	tBodyAccJerkMag-std()          |38	Time.BodyAccJerkMag.StdDev  
-39	tBodyGyroMag-mean()            |39	Time.BodyGyroMag.Mean  
-40	tBodyGyroMag-std()             |40	Time.BodyGyroMag.StdDev  
-41	tBodyGyroJerkMag-mean()        |41	Time.BodyGyroJerkMag.Mean  
-42	tBodyGyroJerkMag-std()         |42	Time.BodyGyroJerkMag.StdDev  
-43	fBodyAcc-mean()-X              |43	FFT.BodyAcc.Mean.X  
-44	fBodyAcc-mean()-Y              |44	FFT.BodyAcc.Mean.Y  
-45	fBodyAcc-mean()-Z              |45	FFT.BodyAcc.Mean.Z  
-46	fBodyAcc-std()-X               |46	FFT.BodyAcc.StdDev.X  
-47	fBodyAcc-std()-Y               |47	FFT.BodyAcc.StdDev.Y  
-48	fBodyAcc-std()-Z               |48	FFT.BodyAcc.StdDev.Z  
-49	fBodyAcc-meanFreq()-X          |49	FFT.BodyAcc.MeanFrequency.X  
-50	fBodyAcc-meanFreq()-Y          |50	FFT.BodyAcc.MeanFrequency.Y  
-51	fBodyAcc-meanFreq()-Z          |51	FFT.BodyAcc.MeanFrequency.Z  
-52	fBodyAccJerk-mean()-X          |52	FFT.BodyAccJerk.Mean.X  
-53	fBodyAccJerk-mean()-Y          |53	FFT.BodyAccJerk.Mean.Y  
-54	fBodyAccJerk-mean()-Z          |54	FFT.BodyAccJerk.Mean.Z  
-55	fBodyAccJerk-std()-X           |55	FFT.BodyAccJerk.StdDev.X  
-56	fBodyAccJerk-std()-Y           |56	FFT.BodyAccJerk.StdDev.Y  
-57	fBodyAccJerk-std()-Z           |57	FFT.BodyAccJerk.StdDev.Z  
-58	fBodyAccJerk-meanFreq()-X      |58	FFT.BodyAccJerk.MeanFrequency.X  
-59	fBodyAccJerk-meanFreq()-Y      |59	FFT.BodyAccJerk.MeanFrequency.Y  
-60	fBodyAccJerk-meanFreq()-Z      |60	FFT.BodyAccJerk.MeanFrequency.Z  
-61	fBodyGyro-mean()-X             |61	FFT.BodyGyro.Mean.X  
-62	fBodyGyro-mean()-Y             |62	FFT.BodyGyro.Mean.Y  
-63	fBodyGyro-mean()-Z             |63	FFT.BodyGyro.Mean.Z  
-64	fBodyGyro-std()-X              |64	FFT.BodyGyro.StdDev.X  
-65	fBodyGyro-std()-Y              |65	FFT.BodyGyro.StdDev.Y  
-66	fBodyGyro-std()-Z              |66	FFT.BodyGyro.StdDev.Z  
-67	fBodyGyro-meanFreq()-X         |67	FFT.BodyGyro.MeanFrequency.X  
-68	fBodyGyro-meanFreq()-Y         |68	FFT.BodyGyro.MeanFrequency.Y  
-69	fBodyGyro-meanFreq()-Z         |69	FFT.BodyGyro.MeanFrequency.Z  
-70	fBodyAccMag-mean()             |70	FFT.BodyAccMag.Mean  
-71	fBodyAccMag-std()              |71	FFT.BodyAccMag.StdDev  
-72	fBodyAccMag-meanFreq()         |72	FFT.BodyAccMag.MeanFrequency  
-73	fBodyBodyAccJerkMag-mean()     |73	FFT.BodyAccJerkMag.Mean  
-74	fBodyBodyAccJerkMag-std()      |74	FFT.BodyAccJerkMag.StdDev  
-75	fBodyBodyAccJerkMag-meanFreq() |75	FFT.BodyAccJerkMag.MeanFrequency  
-76	fBodyBodyGyroMag-mean()        |76	FFT.BodyGyroMag.Mean  
-77	fBodyBodyGyroMag-std()         |77	FFT.BodyGyroMag.StdDev  
-78	fBodyBodyGyroMag-meanFreq()    |78	FFT.BodyGyroMag.MeanFrequency  
-79	fBodyBodyGyroJerkMag-mean()    |79	FFT.BodyGyroJerkMag.Mean  
-80	fBodyBodyGyroJerkMag-std()     |80	FFT.BodyGyroJerkMag.StdDev  
-81	fBodyBodyGyroJerkMag-meanFreq()|81	FFT.BodyGyroJerkMag.MeanFrequency  
+For each measurement the mean, stddev, and mean frequency were calculated.
+
+1	Subject  
+2	Activity  
+3	Time.BodyAcc.Mean.X  
+4	Time.BodyAcc.Mean.Y  
+5	Time.BodyAcc.Mean.Z  
+6	Time.BodyAcc.StdDev.X  
+7	Time.BodyAcc.StdDev.Y  
+8	Time.BodyAcc.StdDev.Z  
+9	Time.GravityAcc.Mean.X  
+10	Time.GravityAcc.Mean.Y  
+11	Time.GravityAcc.Mean.Z    
+12	Time.GravityAcc.StdDev.X  
+13	Time.GravityAcc.StdDev.Y  
+14	Time.GravityAcc.StdDev.Z  
+15	Time.BodyAccJerk.Mean.X  
+16	Time.BodyAccJerk.Mean.Y  
+17	Time.BodyAccJerk.Mean.Z  
+18	Time.BodyAccJerk.StdDev.X  
+19	Time.BodyAccJerk.StdDev.Y  
+20	Time.BodyAccJerk.StdDev.Z  
+21	Time.BodyGyro.Mean.X  
+22	Time.BodyGyro.Mean.Y  
+23	Time.BodyGyro.Mean.Z  
+24	Time.BodyGyro.StdDev.X  
+25	Time.BodyGyro.StdDev.Y  
+26	Time.BodyGyro.StdDev.Z  
+27	Time.BodyGyroJerk.Mean.X  
+28	Time.BodyGyroJerk.Mean.Y  
+29	Time.BodyGyroJerk.Mean.Z  
+30	Time.BodyGyroJerk.StdDev.X  
+31	Time.BodyGyroJerk.StdDev.Y  
+32	Time.BodyGyroJerk.StdDev.Z  
+33	Time.BodyAccMag.Mean  
+34	Time.BodyAccMag.StdDev  
+35	Time.GravityAccMag.Mean  
+36	Time.GravityAccMag.StdDev  
+37	Time.BodyAccJerkMag.Mean  
+38	Time.BodyAccJerkMag.StdDev  
+39	Time.BodyGyroMag.Mean  
+40	Time.BodyGyroMag.StdDev  
+41	Time.BodyGyroJerkMag.Mean  
+42	Time.BodyGyroJerkMag.StdDev  
+43	FFT.BodyAcc.Mean.X  
+44	FFT.BodyAcc.Mean.Y  
+45	FFT.BodyAcc.Mean.Z  
+46	FFT.BodyAcc.StdDev.X  
+47	FFT.BodyAcc.StdDev.Y  
+48	FFT.BodyAcc.StdDev.Z  
+49	FFT.BodyAcc.MeanFrequency.X  
+50	FFT.BodyAcc.MeanFrequency.Y  
+51	FFT.BodyAcc.MeanFrequency.Z  
+52	FFT.BodyAccJerk.Mean.X  
+53	FFT.BodyAccJerk.Mean.Y  
+54	FFT.BodyAccJerk.Mean.Z  
+55	FFT.BodyAccJerk.StdDev.X  
+56	FFT.BodyAccJerk.StdDev.Y  
+57	FFT.BodyAccJerk.StdDev.Z  
+58	FFT.BodyAccJerk.MeanFrequency.X  
+59	FFT.BodyAccJerk.MeanFrequency.Y  
+60	FFT.BodyAccJerk.MeanFrequency.Z  
+61	FFT.BodyGyro.Mean.X  
+62	FFT.BodyGyro.Mean.Y  
+63	FFT.BodyGyro.Mean.Z  
+64	FFT.BodyGyro.StdDev.X  
+65	FFT.BodyGyro.StdDev.Y  
+66	FFT.BodyGyro.StdDev.Z  
+67	FFT.BodyGyro.MeanFrequency.X  
+68	FFT.BodyGyro.MeanFrequency.Y  
+69	FFT.BodyGyro.MeanFrequency.Z  
+70	FFT.BodyAccMag.Mean  
+71	FFT.BodyAccMag.StdDev  
+72	FFT.BodyAccMag.MeanFrequency  
+73	FFT.BodyAccJerkMag.Mean  
+74	FFT.BodyAccJerkMag.StdDev  
+75	FFT.BodyAccJerkMag.MeanFrequency  
+76	FFT.BodyGyroMag.Mean  
+77	FFT.BodyGyroMag.StdDev  
+78	FFT.BodyGyroMag.MeanFrequency  
+79	FFT.BodyGyroJerkMag.Mean  
+80	FFT.BodyGyroJerkMag.StdDev  
+81	FFT.BodyGyroJerkMag.MeanFrequency  
 
