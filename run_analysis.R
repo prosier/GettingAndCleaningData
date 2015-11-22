@@ -32,15 +32,15 @@ titles <- c("Subject","Activity")
 titles <- c(titles, as.character(features[mean_std,]$feature_name))
 
 ##Appropriately label the data set with descriptive variable names.
-titles <- gsub("-mean\\(\\)", ".Mean", titles)
-titles <- gsub("-meanFreq\\(\\)", ".MeanFrequency", titles)
-titles <- gsub("-std\\(\\)", ".StdDev", titles)
-titles <- gsub("-", ".", titles)
+titles <- gsub("-mean\\(\\)", "_Mean", titles)
+titles <- gsub("-meanFreq\\(\\)", "_MeanFrequency", titles)
+titles <- gsub("-std\\(\\)", "_StdDev", titles)
+titles <- gsub("-", "_", titles)
 titles <- gsub("BodyBody", "Body", titles)
-titles <- gsub("tBody", "Time.Body", titles)
-titles <- gsub("tGravity", "Time.Gravity", titles)
-titles <- gsub("fBody", "FFT.Body", titles)
-titles <- gsub("fGravity", "FFT.Gravity", titles)
+titles <- gsub("tBody", "Time_Body", titles)
+titles <- gsub("tGravity", "Time_Gravity", titles)
+titles <- gsub("fBody", "FFT_Body", titles)
+titles <- gsub("fGravity", "FFT_Gravity", titles)
 
 names(result) <- titles
 ##Use descriptive activity names to name the activities in the data set

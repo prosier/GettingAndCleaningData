@@ -1,86 +1,104 @@
+Introduction
+------------
+The Smartlab has developed a new publicly available database of daily human activities that has been recorded using accelerometer and gyroscope data from a waist-mounted Android-OS smartphone (Samsung Galaxy S II).  
+The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
+
+The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.  
+
+For each record it is provided:
+======================================
+
+- Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
+- Triaxial Angular velocity from the gyroscope. 
+- A 561-feature vector with time and frequency domain variables. 
+- Its activity label. 
+- An identifier of the subject who carried out the experiment.
+
+[link] (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
+
 ### Contained features
 
 The tidy data set contains the following Time and FFT features.
 
 1	Subject  
 2	Activity  
-3	Time.BodyAcc.Mean.X  
-4	Time.BodyAcc.Mean.Y  
-5	Time.BodyAcc.Mean.Z  
-6	Time.BodyAcc.StdDev.X  
-7	Time.BodyAcc.StdDev.Y  
-8	Time.BodyAcc.StdDev.Z  
-9	Time.GravityAcc.Mean.X  
-10	Time.GravityAcc.Mean.Y  
-11	Time.GravityAcc.Mean.Z    
-12	Time.GravityAcc.StdDev.X  
-13	Time.GravityAcc.StdDev.Y  
-14	Time.GravityAcc.StdDev.Z  
-15	Time.BodyAccJerk.Mean.X  
-16	Time.BodyAccJerk.Mean.Y  
-17	Time.BodyAccJerk.Mean.Z  
-18	Time.BodyAccJerk.StdDev.X  
-19	Time.BodyAccJerk.StdDev.Y  
-20	Time.BodyAccJerk.StdDev.Z  
-21	Time.BodyGyro.Mean.X  
-22	Time.BodyGyro.Mean.Y  
-23	Time.BodyGyro.Mean.Z  
-24	Time.BodyGyro.StdDev.X  
-25	Time.BodyGyro.StdDev.Y  
-26	Time.BodyGyro.StdDev.Z  
-27	Time.BodyGyroJerk.Mean.X  
-28	Time.BodyGyroJerk.Mean.Y  
-29	Time.BodyGyroJerk.Mean.Z  
-30	Time.BodyGyroJerk.StdDev.X  
-31	Time.BodyGyroJerk.StdDev.Y  
-32	Time.BodyGyroJerk.StdDev.Z  
-33	Time.BodyAccMag.Mean  
-34	Time.BodyAccMag.StdDev  
-35	Time.GravityAccMag.Mean  
-36	Time.GravityAccMag.StdDev  
-37	Time.BodyAccJerkMag.Mean  
-38	Time.BodyAccJerkMag.StdDev  
-39	Time.BodyGyroMag.Mean  
-40	Time.BodyGyroMag.StdDev  
-41	Time.BodyGyroJerkMag.Mean  
-42	Time.BodyGyroJerkMag.StdDev  
-43	FFT.BodyAcc.Mean.X  
-44	FFT.BodyAcc.Mean.Y  
-45	FFT.BodyAcc.Mean.Z  
-46	FFT.BodyAcc.StdDev.X  
-47	FFT.BodyAcc.StdDev.Y  
-48	FFT.BodyAcc.StdDev.Z  
-49	FFT.BodyAcc.MeanFrequency.X  
-50	FFT.BodyAcc.MeanFrequency.Y  
-51	FFT.BodyAcc.MeanFrequency.Z  
-52	FFT.BodyAccJerk.Mean.X  
-53	FFT.BodyAccJerk.Mean.Y  
-54	FFT.BodyAccJerk.Mean.Z  
-55	FFT.BodyAccJerk.StdDev.X  
-56	FFT.BodyAccJerk.StdDev.Y  
-57	FFT.BodyAccJerk.StdDev.Z  
-58	FFT.BodyAccJerk.MeanFrequency.X  
-59	FFT.BodyAccJerk.MeanFrequency.Y  
-60	FFT.BodyAccJerk.MeanFrequency.Z  
-61	FFT.BodyGyro.Mean.X  
-62	FFT.BodyGyro.Mean.Y  
-63	FFT.BodyGyro.Mean.Z  
-64	FFT.BodyGyro.StdDev.X  
-65	FFT.BodyGyro.StdDev.Y  
-66	FFT.BodyGyro.StdDev.Z  
-67	FFT.BodyGyro.MeanFrequency.X  
-68	FFT.BodyGyro.MeanFrequency.Y  
-69	FFT.BodyGyro.MeanFrequency.Z  
-70	FFT.BodyAccMag.Mean  
-71	FFT.BodyAccMag.StdDev  
-72	FFT.BodyAccMag.MeanFrequency  
-73	FFT.BodyAccJerkMag.Mean  
-74	FFT.BodyAccJerkMag.StdDev  
-75	FFT.BodyAccJerkMag.MeanFrequency  
-76	FFT.BodyGyroMag.Mean  
-77	FFT.BodyGyroMag.StdDev  
-78	FFT.BodyGyroMag.MeanFrequency  
-79	FFT.BodyGyroJerkMag.Mean  
-80	FFT.BodyGyroJerkMag.StdDev  
-81	FFT.BodyGyroJerkMag.MeanFrequency  
+3	Time_BodyAcc_Mean_X  
+4	Time_BodyAcc_Mean_Y  
+5	Time_BodyAcc_Mean_Z  
+6	Time_BodyAcc_StdDev_X  
+7	Time_BodyAcc_StdDev_Y  
+8	Time_BodyAcc_StdDev_Z  
+9	Time_GravityAcc_Mean_X  
+10	Time_GravityAcc_Mean_Y  
+11	Time_GravityAcc_Mean_Z    
+12	Time_GravityAcc_StdDev_X  
+13	Time_GravityAcc_StdDev_Y  
+14	Time_GravityAcc_StdDev_Z  
+15	Time_BodyAccJerk_Mean_X  
+16	Time_BodyAccJerk_Mean_Y  
+17	Time_BodyAccJerk_Mean_Z  
+18	Time_BodyAccJerk_StdDev_X  
+19	Time_BodyAccJerk_StdDev_Y  
+20	Time_BodyAccJerk_StdDev_Z  
+21	Time_BodyGyro_Mean_X  
+22	Time_BodyGyro_Mean_Y  
+23	Time_BodyGyro_Mean_Z  
+24	Time_BodyGyro_StdDev_X  
+25	Time_BodyGyro_StdDev_Y  
+26	Time_BodyGyro_StdDev_Z  
+27	Time_BodyGyroJerk_Mean_X  
+28	Time_BodyGyroJerk_Mean_Y  
+29	Time_BodyGyroJerk_Mean_Z  
+30	Time_BodyGyroJerk_StdDev_X  
+31	Time_BodyGyroJerk_StdDev_Y  
+32	Time_BodyGyroJerk_StdDev_Z  
+33	Time_BodyAccMag_Mean  
+34	Time_BodyAccMag_StdDev  
+35	Time_GravityAccMag_Mean  
+36	Time_GravityAccMag_StdDev  
+37	Time_BodyAccJerkMag_Mean  
+38	Time_BodyAccJerkMag_StdDev  
+39	Time_BodyGyroMag_Mean  
+40	Time_BodyGyroMag_StdDev  
+41	Time_BodyGyroJerkMag_Mean  
+42	Time_BodyGyroJerkMag_StdDev  
+43	FFT_BodyAcc_Mean_X  
+44	FFT_BodyAcc_Mean_Y  
+45	FFT_BodyAcc_Mean_Z  
+46	FFT_BodyAcc_StdDev_X  
+47	FFT_BodyAcc_StdDev_Y  
+48	FFT_BodyAcc_StdDev_Z  
+49	FFT_BodyAcc_MeanFrequency_X  
+50	FFT_BodyAcc_MeanFrequency_Y  
+51	FFT_BodyAcc_MeanFrequency_Z  
+52	FFT_BodyAccJerk_Mean_X  
+53	FFT_BodyAccJerk_Mean_Y  
+54	FFT_BodyAccJerk_Mean_Z  
+55	FFT_BodyAccJerk_StdDev_X  
+56	FFT_BodyAccJerk_StdDev_Y  
+57	FFT_BodyAccJerk_StdDev_Z  
+58	FFT_BodyAccJerk_MeanFrequency_X  
+59	FFT_BodyAccJerk_MeanFrequency_Y  
+60	FFT_BodyAccJerk_MeanFrequency_Z  
+61	FFT_BodyGyro_Mean_X  
+62	FFT_BodyGyro_Mean_Y  
+63	FFT_BodyGyro_Mean_Z  
+64	FFT_BodyGyro_StdDev_X  
+65	FFT_BodyGyro_StdDev_Y  
+66	FFT_BodyGyro_StdDev_Z  
+67	FFT_BodyGyro_MeanFrequency_X  
+68	FFT_BodyGyro_MeanFrequency_Y  
+69	FFT_BodyGyro_MeanFrequency_Z  
+70	FFT_BodyAccMag_Mean  
+71	FFT_BodyAccMag_StdDev  
+72	FFT_BodyAccMag_MeanFrequency  
+73	FFT_BodyAccJerkMag_Mean  
+74	FFT_BodyAccJerkMag_StdDev  
+75	FFT_BodyAccJerkMag_MeanFrequency  
+76	FFT_BodyGyroMag_Mean  
+77	FFT_BodyGyroMag_StdDev  
+78	FFT_BodyGyroMag_MeanFrequency  
+79	FFT_BodyGyroJerkMag_Mean  
+80	FFT_BodyGyroJerkMag_StdDev  
+81	FFT_BodyGyroJerkMag_MeanFrequency  
 
